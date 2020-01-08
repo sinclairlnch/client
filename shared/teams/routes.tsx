@@ -4,7 +4,7 @@ import TeamsRoot from './container'
 import RetentionWarning from './team/settings-tab/retention/warning/container'
 import TeamDeleteTeam from './delete-team/container'
 import TeamEditTeamAvatar from '../profile/edit-avatar/container'
-import TeamEditTeamDescription from './edit-team-description/container'
+import TeamEditTeamDescription from './edit-team-description'
 import TeamInviteByEmail from './invite-by-email/container'
 import TeamInviteByContact from './invite-by-contact/container'
 import TeamJoinTeamDialog from './join-team/container'
@@ -32,7 +32,7 @@ export const newModalRoutes = {
     getScreen: (): typeof TeamEditTeamAvatar => require('../profile/edit-avatar/container').default,
   },
   teamEditTeamDescription: {
-    getScreen: (): typeof TeamEditTeamDescription => require('./edit-team-description/container').default,
+    getScreen: (): typeof TeamEditTeamDescription => require('./edit-team-description').default,
   },
   teamInviteByContact: {
     getScreen: (): typeof TeamInviteByContact => require('./invite-by-contact/container').default,
